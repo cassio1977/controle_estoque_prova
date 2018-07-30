@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "500c6781-0b20-4876-ab89-ea2a85695860",
+		"name": "Testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "bbc3b4cd-0230-4609-a254-cadd953bc60d",
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "APP_KEY",
+						"value": "base64:yowhVE6aXpHK4aa+7F7hXnODUr5UNR1AfWu54MDpKus=",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"sku\":4,\n\t\"quantidade\": 2,\n\t\"tipo\":\"e\",\n\t\"api\":\"s\",\n\t\"obs\":\"teste API\",\n\t\"data\":\"2018-07-30 00:00:00\",\n\t\"user\":\"API\"\n\n}\n]"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "b23a09cd-2b1f-496f-af61-c8c2560b4eaf",
+			"name": "Post Adiciona",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "APP_KEY",
+						"value": "base64:yowhVE6aXpHK4aa+7F7hXnODUr5UNR1AfWu54MDpKus=",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sku\": \"2\",\n    \"quantidade\": \"100\",\n    \"tipo\": \"e\",\n    \"api\": \"s\",\n    \"obs\": \"APIteste\",\n    \"data\": \"2018-07-30 00:00:00\",\n    \"user\": \"Cassio\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/adicionar-produtos?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"adicionar-produtos"
+					],
+					"query": [
+						{
+							"key": "sku",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "quantidade",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "tipo",
+							"value": "e",
+							"disabled": true
+						},
+						{
+							"key": "api",
+							"value": "s",
+							"disabled": true
+						},
+						{
+							"key": "obs",
+							"value": "API teste",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "2018-07-30 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "Cassio",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "4d816856-8d92-4ab5-96e4-4af55774b9a1",
+			"name": "Post Subtrai",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "APP_KEY",
+						"value": "base64:yowhVE6aXpHK4aa+7F7hXnODUr5UNR1AfWu54MDpKus=",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sku\": \"4\",\n    \"quantidade\": \"2\",\n    \"tipo\": \"s\",\n    \"api\": \"s\",\n    \"obs\": \"APIteste\",\n    \"data\": \"2018-07-30 00:00:00\",\n    \"user\": \"Cassio\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/baixar-produtos?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"baixar-produtos"
+					],
+					"query": [
+						{
+							"key": "sku",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "quantidade",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "tipo",
+							"value": "e",
+							"disabled": true
+						},
+						{
+							"key": "api",
+							"value": "s",
+							"disabled": true
+						},
+						{
+							"key": "obs",
+							"value": "API teste",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "2018-07-30 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "Cassio",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

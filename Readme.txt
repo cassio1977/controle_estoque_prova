@@ -1,4 +1,10 @@
-Contactamax prova de Laravel v1.1:
+﻿Contactamax prova de Laravel v1.1:
+Releases da V1.1
+Acrescentado ao diretório:
+1) Coleções do postman para testes das APIs.
+2) Um Dump SQL completo da base de dados.
+3) Um Dump com produtos e movimentações de estoque.
+
 
 Versões Utilizadas no Projeto: 
 Composer 1.6.5
